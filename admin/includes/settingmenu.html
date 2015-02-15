@@ -1,0 +1,26 @@
+<ul id="navigation">
+<?php
+$tablename	=	"general_contact";
+			
+$sql ="SELECT * FROM ".$tablename." ";
+$data = mysql_query($sql);
+
+if (mysql_num_rows($data)==0)
+	 {
+?>
+    	<li class="top">
+    		<a href="?action=member&amp;process=add"  class="top_link">Add</a>
+    	</li>
+<?php
+	}
+else
+	{
+?>
+		<li class="top">
+    		<a href="?action=member&amp;process=change"  class="top_link">Change</a>
+    	</li>
+<?php
+	}
+?>
+
+</ul>

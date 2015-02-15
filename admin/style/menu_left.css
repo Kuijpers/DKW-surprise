@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* Menu links Test site */
+
+#navigation {
+	padding				:	0; 
+	margin				:	0;
+	margin-top			:	0;
+	list-style			:	none; 
+	width				:	148px; 
+	height				:	auto;
+	position			:	relative; 
+	z-index				:	500; 
+	font-family			:	arial, verdana, sans-serif;
+	color				:	#000000;
+	text-align			:	left;
+	padding-left		:	0;
+}
+
+#navigation li.top {
+	display				:	block; 
+	float				:	left; 
+	height				:	25px;
+	
+	border				:	1px solid black;
+}
+
+#navigation li a.top_link {
+	display				:	block;	
+	width				:	148px; 
+	float				:	left;
+	height				:	25px; 
+	line-height			:	23px;
+	color				:	#000000; 
+	text-decoration		:	none; 
+	font-size			:	12px; 
+	font-weight			:	bold; 
+	padding				:	0 0 0 0; 
+	cursor				:	pointer;
+	padding-left		:	0;
+}
+
+#navigation li a.top_link span {
+	float				:	left; 
+	display				:	block; 
+	padding				:	0 0 0 5px;
+	width				:	125px;
+	height				:	25px;
+}
+
+#navigation li a.top_link span.down {
+	float				:	left; 
+	display				:	block; 
+	padding				:	0 0 0 5px; 
+	height				:	25px; 
+}
+
+#navigation li:hover a.top_link {
+	color				:	#cccccc; /* Hoover van het hoofdmenu deel */
+}
+#navigation li:hover a.top_link span {
+	padding-left		:	5px;
+}
+
+#navigation li:hover a.top_link span.down {
+}
+
+/* Default list styling */
+
+#navigation li:hover {
+	position			:	relative; 
+	z-index				:	200;
+}
+
+#navigation li:hover ul.sub{
+	left				:	1px; 
+	top					:	38px; 
+	background			:	#ffffff; 
+	padding				:	10px; 
+	margin-left			:	145px;
+	margin-top			:	-35px;
+	border				:	1px solid #000000; 
+	white-space			:	nowrap; 
+	width				:	200px; 
+	height				:	auto; 
+	z-index				:	300;
+}
+
+#navigation li:hover ul.sub li{
+	display				:	block; 
+	height				:	20px; 
+	position			:	relative; 
+	float				:	left; 
+	width				:	200px; 
+	font-weight			:	normal;
+}
+
+#navigation li:hover ul.sub li a{
+	display				:	block; 
+	font-size			:	12px; 
+	font-weight			:	bold;
+	height				:	18px; 
+	width				:	195px; 
+	line-height			:	18px; 
+	text-indent			:	5px; 
+	color				:	#000000; 
+	text-decoration		:	none;
+	border				:	1px solid #000000;
+}
+
+#navigation li ul.sub li a.fly{
+	background			:	#ffffff url(../../images/arrow_right.png) right center no-repeat;
+}
+
+#navigation li:hover ul.sub li a:hover{
+	background			:	#000000; 
+	color				:	#ffffff; 
+	border-color		:	#ffffff;
+}
+
+#navigation li:hover ul.sub li a.fly:hover{
+	background			:	#000000 url(../../images/arrow_right.png) right center no-repeat; 
+	color				:	#ffffff;
+}
+
+#navigation li:hover li:hover ul,#navigation li:hover li:hover li:hover ul,
+#navigation li:hover li:hover li:hover li:hover ul,#navigation li:hover li:hover li:hover li:hover li:hover ul{
+	left				:	190px; 
+	top					:	4px; 
+	background			:	#ffffff; 
+	padding				:	3px; 
+	border				:	1px solid #000000; 
+	white-space			:	nowrap; 
+	width				:	200px; 
+	z-index				:	400; 
+	height				:	auto;
+}
+
+#navigation ul,#navigation li:hover ul ul,#navigation li:hover li:hover ul ul,
+#navigation li:hover li:hover li:hover ul ul,#navigation li:hover li:hover li:hover li:hover ul ul{
+	position			:	absolute; 
+	left				:	-9999px; 
+	top					:	-9999px; 
+	width				:	0; 
+	height				:	0; 
+	margin				:	0; 
+	padding				:	0; 
+	list-style			:	none;
+}
+
+#navigation li:hover li:hover a.fly,#navigation li:hover li:hover li:hover a.fly,
+#navigation li:hover li:hover li:hover li:hover a.fly,#navigation li:hover li:hover li:hover li:hover li:hover a.fly{
+	background			:	#ffffff url(../../images/arrow_right.png) right center no-repeat; 
+	color				:	#000000; 
+	border-color		:	#000000;
+} 
+
+#navigation li:hover li:hover li a.fly,#navigation li:hover li:hover li:hover li a.fly,
+#navigation li:hover li:hover li:hover li:hover li a.fly{
+	background			:	#ffffff url(../../images/arrow_right.png) right center no-repeat; 
+	color				:	#000000; 
+	border-color		:	#ffffff;
+} 
+

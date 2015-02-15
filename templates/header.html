@@ -1,0 +1,79 @@
+<?php
+// Website designed by :	Dennis Kuijpers
+// Website scripting:		Dennis Kuijpers
+// Copyright:				Dennis Kuijpers
+// Copyrightyear:			Dennis Kuijpers
+// For more information:	divigodesign@gmail.com
+// Personal website:		www.divigodesign.eu
+
+
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="content-style-type" content="text/css" />
+	<meta http-equiv="content-language" content="nl-nl" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="resource-type" content="document" />
+	<meta name="distribution" content="global" />
+	<meta name="copyright" content="2010 Divigodesign" />
+	<meta name="keywords" content="" />
+
+	<link rel="stylesheet" type="text/css" href='style/common.css'/>
+    
+    <!-- Vanaf hier loopt de colorbox script benodigd om foto's en video's uit te lichten-->
+    <link type="text/css" media="screen" rel="stylesheet" href="style/colorbox.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function()
+				{
+					$("a[rel='foto']").colorbox({transition:"fade", slideshow:true, width:"55%", height:"85%"});
+					$(".video1").colorbox();
+					$(".video2").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+				});
+		</script>
+    <!-- Tot hier loopt de colorbox script-->
+    
+    <!-- Script voor pop up dekvoorwaarden-->
+    	<script language="javaScript" type="text/javascript">
+			<!-- Idea by:  Nic Wolfe -->
+			<!-- This script and many more are available free online at -->
+			<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+			<!-- Begin
+				function popUp(URL) {
+				day = new Date();
+				id = day.getTime();
+				eval("page" + id + " = window.open(URL, '" + id + "', 		'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=1025,height=450,left = 150,top = 134');");
+				}
+			// End -->
+		</script>
+        
+        <!-- Tot hier loopt het script voor dekvoorwaarden -->
+    
+    <?php
+                if ($menu_set == 3)
+                	{
+                    ?>
+               		 	<link rel="stylesheet" type="text/css" href='style/menu_left.css'/>
+                    <?php
+                    }
+                if ($menu_set == 1)
+                	{
+                    ?>
+               		 	<link rel="stylesheet" type="text/css" href='style/menu_top.css'/>
+                    <?php
+                    }
+    ?>
+
+<title><?php echo $page_id ?></title>
+
+
+</head>
+
+<body>
+	<div class="container">

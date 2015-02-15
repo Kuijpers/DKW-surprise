@@ -1,0 +1,88 @@
+<div id="language">
+	<div class="lang">
+    	<?php
+        	if ($show_date == 1)
+            	{
+    				echo "	<div class='time'> \n";
+        					$current_date_time = date('d-m-Y G:i');
+                
+            		echo "			$current_date_time \n";
+        			echo "		</div> \n";
+                 }
+            
+            
+        	if ($lang_sel_type == 1)
+            	{
+    				echo "	<div class='selectbox'> \n";
+        			echo "			<form name='input' action='' method='get'> \n";
+					echo "				<select name='lang' > \n";
+
+									$dir = "./lang/";
+
+									$dh = opendir($dir);
+
+									while (($file = readdir($dh)) !== false) 
+                        				{
+											// Gets the File Extension
+											$extension = substr($file, strrpos($file, '.'));
+			
+			
+											// checks if the extension is .php or the file name is  . or .. if so it will be shown as an exclusion
+											if($extension !== ".php" && $file !== "." && $file !== ".." && $file !== "index.html")
+                                            	{
+			
+													if ($lang !== $file)
+                            							{
+			
+															echo "					<option value='$file'>$language[$file]</option> \n";
+														}
+													else
+                            							{
+			
+															echo "					<option selected='selected' value='$file'>$language[$file]</option> \n";
+			
+														}
+                                                 }
+
+										}
+
+
+										closedir($dh);
+        					echo "				</select> \n";
+    						echo "				<input type='submit'";
+                            echo " value='$select_button'  /> \n";
+							echo "			</form> \n";    
+            
+            
+        					echo "		</div> \n";
+        					echo "		<div class='selectbox'> \n";
+        					echo "			$select_lang \n";
+        					echo "		</div>\n";
+        		}
+                
+			if ($lang_sel_type == 2)
+				{
+					$dir = "./lang/";
+
+					$dh = opendir($dir);
+
+					while (($file = readdir($dh)) !== false) 
+						{
+							// Gets the File Extension
+							$extension = substr($file, strrpos($file, '.'));
+			
+			
+							// checks if the extension is .php or the file name is  . or .. if so it will be shown as an exclusion
+							if($extension !== ".php" && $file !== "." && $file !== ".." && $file !== "index.html")
+								{
+                                	echo "		<div class='selectflag'> \n";
+									echo "			<a href='?lang=$file'><img src='lang/$file/$file.png' alt='Select $language[$file] as language' title='Select $language[$file] as language'/></a> \n";	
+                                    echo "		</div> \n";		
+								}
+
+						}
+				}
+        
+?>
+    	    </div>
+</div>

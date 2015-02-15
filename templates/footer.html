@@ -1,0 +1,17 @@
+<div class="footer">
+	<hr class="footer"/>
+    	<?php
+    		function auto_copyright($year = 'auto')
+            	{
+   					if(intval($year) == 'auto'){ $year = date('Y'); }
+  					if(intval($year) == date('Y')){ echo intval($year); }
+   					if(intval($year) < date('Y')){ echo intval($year) . ' - ' . date('Y'); }
+   					if(intval($year) > date('Y')){ echo date('Y'); }
+ 				}
+    	?>
+    
+			&copy; Copyright <?php auto_copyright('2010'); ?> The Surprise Stables
+        </div>
+	</div>
+</body>
+</html>

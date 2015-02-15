@@ -1,0 +1,20 @@
+
+
+
+Future updates
+
+
+* Add pagination to gallery.php
+
+* Add height for horse on home_horse.php
+
+* Add color for horse on home_horse.php
+
+* Add availabillity breeding
+	Incl.
+			# Make available for breeding
+			# Breeding conditions
+			# Breeding costs
+	( use system used for making horse for sale )
+			
+* Add checkbox "unknown" to registration bloodline

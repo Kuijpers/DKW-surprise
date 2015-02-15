@@ -1,0 +1,8 @@
+
+
+Bugfixes
+
+
+*	Container div not full height in gallery.php
+
+*	Add image to horse in add horse process shows "make main image" when main image is set.

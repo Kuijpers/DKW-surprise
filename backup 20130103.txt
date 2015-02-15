@@ -1,0 +1,802 @@
+-- phpMyAdmin SQL Dump
+-- version 3.5.2.2
+-- http://www.phpmyadmin.net
+--
+-- Machine: localhost
+-- Genereertijd: 03 jan 2013 om 14:11
+-- Serverversie: 5.1.66
+-- PHP-versie: 5.3.17
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Databank: `deb44110_surprise`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `breeding`
+--
+
+CREATE TABLE IF NOT EXISTS `breeding` (
+  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `stallion` varchar(255) COLLATE utf8_bin NOT NULL,
+  `mare` varchar(255) COLLATE utf8_bin NOT NULL,
+  `breedmonth` int(5) NOT NULL,
+  `breedyear` int(10) NOT NULL,
+  `stamp` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=28 ;
+
+--
+-- Gegevens worden uitgevoerd voor tabel `breeding`
+--
+
+INSERT INTO `breeding` (`id`, `stallion`, `mare`, `breedmonth`, `breedyear`, `stamp`) VALUES
+(20, '  WMM Thrillers Cloud Walker ', 'Sky van de Hazelberg ', 4, 2012, 1296684242),
+(19, '  WMM Thrillers Cloud Walker ', 'S.S.M. Eross Baileys & Cream ', 4, 2012, 1296684242),
+(9, 'WMM Thrillers Cloud Walker', '  Sky van de Hazelberg ', 4, 2013, 1296729702),
+(13, 'WMM Thrillers Cloud Walker ', '  Vaya of the Surprise stables ', 4, 2013, 1296741800),
+(15, 'WMM Thrillers Cloud Walker ', '  S.S.M. Eross Baileys & Cream ', 4, 2013, 1296731806),
+(17, 'WMM Thrillers Cloud Walker ', '  S.S.M. Eross Bubble Gum ', 4, 2013, 1296740469),
+(22, '  WMM Thrillers Cloud Walker ', 'S.S.M. Presco\\\\\\''s Bubble Gum ', 3, 2012, 1296684242),
+(23, '  WMM Thrillers Cloud Walker ', 'Vaya of the Surprise stables ', 3, 2012, 1296684242),
+(25, 'JSW Dancing Deed', '  OFMS Born to Glow ', 5, 2013, 1329415669),
+(27, 'WMM Thrillers Cloud Walker ', '  S.S.M. Em Pacs Aysha ', 3, 2013, 1296734632);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `en_about`
+--
+
+CREATE TABLE IF NOT EXISTS `en_about` (
+  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `title` varchar(60) COLLATE utf8_bin NOT NULL,
+  `text` text COLLATE utf8_bin NOT NULL,
+  `stamp` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=5 ;
+
+--
+-- Gegevens worden uitgevoerd voor tabel `en_about`
+--
+
+INSERT INTO `en_about` (`id`, `title`, `text`, `stamp`) VALUES
+(3, 'Welcome in our stable!', 'At an almost fairy like location near to Breda and the Belgium border there is a small ambitious breeding farm for miniature horses situated, named: The Surprise Stables.\r\nSince 2002 we work and breed miniature horses with full enthausiams and passion.\r\nThe miniature horses are selected by bloodlines, exterior, movement and character, and these qualities are bred forward with success.\r\nMany years of effort and predilection for miniature horses produces wonderful results at inspections and shows.\r\n\r\nWe breed miniature horses because we would like to improve the breed goal and not for the production.\r\nAll Miniature horses are registered at the NMPRS (Dutch Studbook for Miniature Horses), AMHA (American Miniature Horse Association) and AMHR (American Miniature Horse Registry).\r\n\r\nEach year some foals are bred and also this year from april on, there will be some foals frolicking in the pasture.\r\n\r\nTo keep the amount of miniature horses acceptable and to be able to keep on giving each miniature horse full attention and nursing, some of the miniature horses, mature or immature will be sold.\r\nAll horses will be sold with a passport, chip and a lot of information which does not stop at the purchase, new owners can always come to The Surprise Stables if they need information about their purchase in the future.\r\n\r\nMe, I am Claudia Vermeulen, since a couple of years in many ways active in the miniature horses business besides the breeding.\r\nA couple of years ago I became the secretary of the board of the International Club for Miniature Horses.\r\n\r\nThis European orientated association organises throughout the year many shows and clinics of miniature horses where a lot of peopl from all over Europe participate. In this way owners of miniature horses can expand their hobby by working with their horses outside their â€œOwn Meadowâ€. \r\nDuring the shows I take care of the measurment of the miniature horses before they will enter the and often I also am the ringsteward during the day.\r\n\r\n\r\n\r\nThe Miniature Horse\r\n\r\nMaintenance of a Miniature Horse is about one-tenth of the cost of a full-sized horse. They basically have the same needs for feeding, stabling and care, but the size makes a considerable difference.\r\n\r\nThe versatile Miniature Horse makes an ideal show partner with talents ranging from in-hand showing and driving to jumping and obstacle courses. There are various different competition classes including youth, amateur, special needs and open. The fancy dress is always popular with the younger generation.\r\nMiniature Horses make excellent companions with their gentle affectionate nature and small size. They can be cared for and maintained by both young and old.\r\n\r\nChildren who may be cautious around a full-sized horse often jump at the chance to embrace a Miniature Horse . Guiding a young child in the proper care of the Miniature Horse encourages discipline, responsibility and respect. Working with a Miniature Horse builds confidence and self-esteem, and in the show ring they learn about competitiveness and sportsmanship.\r\n\r\nSpecial needs individuals and older people no longer as mobile who find a full-sized horse difficult to manage are discovering the benefits of the Miniature Horse whether in competition, recreation or as an investment. Miniature Horses have long been used in therapeutic settings with positive results.\r\nThey are also being trained and used as guide horses for the blind, and with their long life expectancy and broad vision (350Â°) they are especially suitable for people with a dog allergy or a special love for horses.\r\nThe versatile Miniature Horse - the horse for everyone!\r\n\r\nToday, the Miniature Horse is one of the worldÂ´s fastest growing and most loved equine breeds. Miniature Horses of good quality can command a high price, but can be seen as a good investment since Miniature foals of good quality and bloodlines are always in great demand.\r\n\r\n\r\n\r\nThe Breeds in our stable.\r\n\r\nN.M.P.R.S.  European bred miniature horses\r\n\r\nThe Dutch Miniature Horse Registry (NMPRS) was founded in 1993 for those breeders who have the goal of creating a miniature replica of a horse by means of cross breeding different horse breeds.\r\n\r\nThe miniature horse is not just a pretty picture, it has many different uses: breeding, driving, jumping and liberty.\r\nOver the years the NMPRS consists of several thousands of animals from bloodlines originating from Shetland, Appaloosa, Welsh, Falabella, Bergmann en American bred horses.\r\n\r\nIn order to maintain pure bloodlines the Registry organises a stud show and a mare show  every year. Which has a strict veterinary protocol and a rating system that clearly shows the quality of the horse. \r\n\r\n\r\n\r\nAmerican Miniature Horse\r\n\r\nTodayÂ´s Miniature Horse is the result of nearly 40 years of selective breeding. This unique breed is a refined, well-proportioned, scaled-down version of the standard-size horse. The American Miniature Horse has several confirmation types, including for example, Draft, Quarter Horse and Arabian. The breed comes in a rainbow of coat colors and markings, an extra challenge for breeders, and gives Miniature Horse lovers a world of choice.\r\nThis small and unique equine stands no taller than 34 inches (86 cm) with AMHA as measured from the last hairs of the mane.\r\n\r\n\r\n\r\nBergmann Miniature Horse\r\n\r\nDe â€˜Bergmannenâ€™ as these horses are also called, originate from the well known horse farm  Bergmann, in Argentina. This is why they have their name Bergmann Miniature Horse. \r\nOver the past years the breeding of these ponies has  become very popular in The Netherlands. These ponies are bred from Falabellaâ€™s, which they cross bred with larger horses such as Arabian horses or the English Thoroughbred Horse.\r\n\r\nAs said mister Bergmann cross bred these horses with other breeds such as the Arabian and the English Thoroughbred Horse. As time went by the horses became smaller and smaller. These little ones have the same characteristics as their bigger cousins. They come in different colours, Pinto or Appaloosa markings. De Bergmann Miniature Horses can be recognised by their expressive little heads.\r\n \r\nThe Bergmann Miniature horses have a very cheerful character and are not as simple as for instance the Shetland Pony. These horses are very reliable and once they know you they will give their life for you. They love to show themselves of and some people say this is one of their most recognisable characteristics. \r\n\r\nThis breed has many useful possibilities mostly because they have a lot of perseverance. This makes them wonderful for the driving sport. These horses come from mixed genes. Because these horses have been crossbred with the larger horses they also have the possibility to jump.\r\n\r\n\r\nWe always love to talk about our miniature horses, if you have any questions, please do not hesitate to contact us.\r\n\r\nClinics that I have been following: \r\n\r\n* NHI Horse teeth 2005\r\n* Monty Roberts Join-Up/Follow-Up 2005\r\n* NHI First help for horse & rider 2005\r\n* NHI Leg problems with horses 2005\r\n* NHI behavor of horses 2005\r\n* Monty Roberts untouchted horses 2005\r\n* Natuurlijk hoofs 2006\r\n* NHI Nutrician 2006\r\n* Monty Roberts nutrician 2006\r\n* Monty Roberts stallions, mares & foals 2007\r\n* ICAMH How do I train my mini for driving 2008\r\n* ICAMH Natural Horsemanship 2008\r\n* ICAMH Clinic with Joanne Ross 2009\r\n* ICAMH colors 2010\r\n* ICAMH Showtraining voor starters 2010\r\n* PKC Minerals & vitamins 2010\r\n* PKC Gras & hay 2010\r\n* Clinic BBB training at your horse 2010\r\n* ICAMH Clinic Mike Rosauer 2011\r\n* Clipping clinic with Brooke the Clippergirl 2012\r\n* ICAMH Clinic Mike Rosauer 2012\r\n* Silverlinde TTouch 2012\r\n\r\n\r\n\r\n\r\n  \r\n\r\n', 1299011225);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `en_breedterms`
+--
+
+CREATE TABLE IF NOT EXISTS `en_breedterms` (
+  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `title` varchar(60) COLLATE utf8_bin NOT NULL,
+  `text` text COLLATE utf8_bin NOT NULL,
+  `stamp` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=2 ;
+
+--
+-- Gegevens worden uitgevoerd voor tabel `en_breedterms`
+--
+
+INSERT INTO `en_breedterms` (`id`, `title`, `text`, `stamp`) VALUES
+(1, 'Breeding terms', 'Breeding terms are not yet online.\r\nFor more information you can use the contact page.', 1302262394);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `en_horses`
+--
+
+CREATE TABLE IF NOT EXISTS `en_horses` (
+  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `title` varchar(60) COLLATE utf8_bin NOT NULL,
+  `text` text COLLATE utf8_bin NOT NULL,
+  `stamp` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=59 ;
+
+--
+-- Gegevens worden uitgevoerd voor tabel `en_horses`
+--
+
+INSERT INTO `en_horses` (`id`, `title`, `text`, `stamp`) VALUES
+(9, 'information', 'Presco has live stud approval by NMPRS, due to three first premiums on the first place of his classes over a period of six years he also became the title of â€œSTAR Stallionâ€.\r\nHis descendants whom followed there dad in the first and second premium awards have given Presco the prestigious title of Preferent stallion. This is the highest level a stallion can achieve by NMPRS.\r\n', 1296743177),
+(8, 'Result color test', 'Walker is black and carries two sabino genes.\r\nHe has been tested LWO Negative.', 1296684242),
+(20, 'At Stud', 'Walker is available for breeding for a select group of mares.\r\n\r\nStudfee: â‚¬ 750.00\r\nStabling: â‚¬ 25.00 per week\r\n', 1296684242),
+(15, 'Result color test', 'a/a:  Black pigment is every where in the hair.\r\nE/e:  The red and the black factor has been found.', 1296740469),
+(16, 'Result color test', 'N/Z:  Vaya carries one Silver Dilution', 1296741800),
+(22, 'At Stud', 'Presco is at stud for a select group of mares.\r\n\r\nStudfee: â‚¬ 400.00\r\nStabling: â‚¬ 25.00 a week', 1296743177),
+(26, '', '', 1296684242),
+(50, '', 'Fancy July is a stunning filly that is a frame overo with two sparkling blue eyes. This filly truly looks like a full-size horse in miniature. She is what you call a â€œBarbie Dollâ€, she has conformation, a tiny tea cup head, long legs, high tail set, a long neck and lovely ears.\r\nHer sire, Walker, is a homozygous for black and sabino stallion. Her dam Eross Baileys & Cream has the overo factor and these two together makes the color of Fancy July so amazing! This filly will be an wonderfull color producer.\r\nFancy July will be shown next year and I just cant wait to see her in the showring, were she belongs! \r\n', 1334778371),
+(45, '', 'Foxy Roxy Roller has an Arabian-type refined body, with a tiny tea cup muzzle, a nice long neck, high tail set and beautiful conformation. He has a bay color highlighted with a silvering sparkle in his mane and tail and a couple of fantastic blue eyes! He is just pure eye candy!\r\nHis dam Em Pac Aysha is a high quality show mare, she won several championships, and you can see all of that back in Foxy Roxy Roller. Without no doubt this will be an amazing sire for your future herd with a splash of colors and refinemendâ€¦..\r\nTwo wonderfull bloodlines made this cross happen; LTDS Magic Man and Boones Little Buckeroo. We are expecting to see a lot of this young colt in the future!\r\n', 1332526113),
+(48, '', 'This little colt came into this world ready to explore and charm everyone who sees him. \r\nFor-Ever Tuff Enoff is very elegant and fine boned, with a beautiful floating, and leg extension. He also has the most dreamy, sparkling dark blue eyes and an amazing long neck! He is out of one of my favorite mares Bubble Gum, with a nice long neck, smooth body and flat topline that breeders strive for in miniature horses. For-Ever Tuff Enoffâ€™s sire is Walker, a homozygous for black and sabino stallion whoâ€™s pedigree includes the LTDS Magic Man. \r\nFor-Ever Tuff Enoff would make a fabulous show horse and future herd sire. \r\nHe has the body and attitude to turn heads in the show ring, and stop visitors to your farm.\r\n', 1334778637),
+(47, '', 'Fast N Furious is truly an Arabian in miniature. This is an exquisite colt, with a classic Arabian head and tiny muzzle, beautiful neck, high tail set, and tipped ears. He comes from championship breeding on both sire and dam sides. He has the trademark Walker refined conformation and elegant movement. At mature age he will be measured around 81cm at the withers, so he is small. Both his sire and dam are homozygous for the black genes, but he also has the sabino gen from his sire. This can be the start of a colourful off spring, when he is old enough to have his own herd.\r\n\r\n', 1334777966),
+(51, '', '', 1334778637),
+(52, '', '', 1334777966),
+(54, '', 'We offer this mare for sale for friends.\r\nShe is a correct en friendly mare, with an amazing trot!\r\nIt is also possible to breed her with one of our stallions.\r\n\r\nBecause they haven\\''t enough space Chazzay have to leave.\r\n\r\nPice: â‚¬ 1500.00\r\nwith a breeding from Thrillers Cloud Walker: â‚¬ 2100.00', 1342200441),
+(56, '', 'Special Delivery, Ã¡ briljant Buckskin Colt. Sired by Silver Plates Baccara Sampson and out of world grand champion First Knights Bit O Hot Shot dam. \r\nHis offspring are know for there beautiful heads ans long slender necks. \r\nThe dam is a full sister of world champion Conders Exeption to the Tules and a daughter of the top 5 mare Buckeroos top Cat. \r\nSpecial delivery  has the refinement, big movement and modern bloodlines. \r\nHis beautiful face will melt your hart.', 1321097523);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `en_index`
+--
+
+CREATE TABLE IF NOT EXISTS `en_index` (
+  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `title` varchar(60) COLLATE utf8_bin NOT NULL,
+  `text` text COLLATE utf8_bin NOT NULL,
+  `stamp` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=15 ;
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `general_contact`
+--
+
+CREATE TABLE IF NOT EXISTS `general_contact` (
+  `id` mediumint(10) NOT NULL AUTO_INCREMENT,
+  `stable` varchar(250) COLLATE utf8_bin NOT NULL,
+  `name` varchar(250) COLLATE utf8_bin NOT NULL,
+  `adres` varchar(250) COLLATE utf8_bin NOT NULL,
+  `postcode` varchar(100) COLLATE utf8_bin NOT NULL,
+  `city` varchar(250) COLLATE utf8_bin NOT NULL,
+  `state` varchar(250) COLLATE utf8_bin NOT NULL,
+  `country` varchar(250) COLLATE utf8_bin NOT NULL,
+  `tel` varchar(100) COLLATE utf8_bin NOT NULL,
+  `cell` varchar(100) COLLATE utf8_bin NOT NULL,
+  `fax` varchar(100) COLLATE utf8_bin NOT NULL,
+  `email` varchar(250) COLLATE utf8_bin NOT NULL,
+  `web` varchar(250) COLLATE utf8_bin NOT NULL,
+  `contactdetails` mediumint(5) NOT NULL,
+  `contactform` mediumint(5) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=2 ;
+
+--
+-- Gegevens worden uitgevoerd voor tabel `general_contact`
+--
+
+INSERT INTO `general_contact` (`id`, `stable`, `name`, `adres`, `postcode`, `city`, `state`, `country`, `tel`, `cell`, `fax`, `email`, `web`, `contactdetails`, `contactform`) VALUES
+(1, 'The Surprise Stables', 'Familie Vermeulen', '', '', '', '', 'The Netherlands', '0031-168-452387', '0031-6-48174720', '', 'falabell@xs4all.nl', 'www.thesurprisestables.com ', 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `horses`
+--
+
+CREATE TABLE IF NOT EXISTS `horses` (
+  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `callname` varchar(255) COLLATE utf8_bin NOT NULL,
+  `fullname` varchar(255) COLLATE utf8_bin NOT NULL,
+  `gender` int(5) NOT NULL,
+  `dobday` int(5) NOT NULL,
+  `dobmonth` int(5) NOT NULL,
+  `dobyear` int(10) NOT NULL,
+  `sire` varchar(255) COLLATE utf8_bin NOT NULL,
+  `dam` varchar(255) COLLATE utf8_bin NOT NULL,
+  `fofs` varchar(255) COLLATE utf8_bin NOT NULL,
+  `mofs` varchar(255) COLLATE utf8_bin NOT NULL,
+  `fofd` varchar(255) COLLATE utf8_bin NOT NULL,
+  `mofd` varchar(255) COLLATE utf8_bin NOT NULL,
+  `stamp` int(11) NOT NULL,
+  `sale` int(5) NOT NULL,
+  `sale_price` varchar(10) COLLATE utf8_bin NOT NULL,
+  `sold_date` date NOT NULL,
+  `breed` int(5) NOT NULL,
+  `breed_price` varchar(10) COLLATE utf8_bin NOT NULL,
+  `color` varchar(100) COLLATE utf8_bin NOT NULL,
+  `height` varchar(100) COLLATE utf8_bin NOT NULL,
+  `unit` int(5) NOT NULL,
+  `spot` int(5) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=51 ;
+
+--
+-- Gegevens worden uitgevoerd voor tabel `horses`
+--
+
+INSERT INTO `horses` (`id`, `callname`, `fullname`, `gender`, `dobday`, `dobmonth`, `dobyear`, `sire`, `dam`, `fofs`, `mofs`, `fofd`, `mofd`, `stamp`, `sale`, `sale_price`, `sold_date`, `breed`, `breed_price`, `color`, `height`, `unit`, `spot`) VALUES
+(18, 'Walker', 'WMM Thrillers Cloud Walker', 1, 5, 5, 2006, 'Magic Mans Thriller', 'LTD`S Magical Grace', 'Magic Man of LTDS', 'Heritage Sandy Buckeroo', 'Marystowns Renegade', 'Samples Wendy Blue Eyed', 1296684242, 0, '', '0000-00-00', 1, '750', '', '89', 1, 1),
+(22, 'Sky', 'Sky van de Hazelberg', 2, 22, 5, 2002, 'Special Effort\\''s Naughty Doll', 'Oleandra van de Piekenhof', 'NFC Egyptian King Special Effort', 'Terry\\''s China Doll', 'Kerswell Puck', 'Arlington Shoescroft Passion', 1296729702, 0, '', '0000-00-00', 0, '', '', '81', 1, 1),
+(24, 'Bailey', 'S.S.M. Eross Baileys & Cream', 2, 14, 5, 2008, 'H &  Hs Eros of Olympus', 'Silver Star of the Fairy Tale Ranch', 'Vermilyea Farms Olympus', 'Deiles Little Girl', 'Caddy van de Berkenhoeve', 'Silverdown Christobel', 1296731806, 0, '', '0000-00-00', 0, '', '', '90', 1, 1),
+(25, 'Aysha', 'S.S.M. Em Pacs Aysha', 2, 4, 5, 2007, 'HCM Bucks Em Pac', 'Vaya of the Surprise Stables', 'Little Kings Almighty Buck', 'Marks Yogas Ima Super Charmer', 'Special effort\\''s Pablo Picasso', 'Patty', 1296734632, 0, '', '0000-00-00', 0, '', '', '90', 1, 1),
+(26, 'Bubbles', 'S.S.M. Eross Bubble Gum', 2, 9, 6, 2008, 'H & Hs Eros of Olympus', 'Patty', 'Vermilyea Farms Olympus', 'Deiles Little Girl ', 'Jiggs', 'Paola', 1296740469, 0, 'request', '0000-00-00', 0, '', '', '92', 1, 1),
+(28, 'Vaya', 'Vaya of the Surprise stables', 2, 27, 5, 2004, 'Special Effort\\''s Pablo Picasso', 'Patty', 'NFC Egyptian King Special Effort', 'Bergmann\\''s Gata', 'Jiggs', 'Paola', 1296741800, 0, '', '0000-00-00', 0, '', '', '89', 1, 1),
+(29, 'Patty', 'Patty', 2, 18, 1, 1993, 'Jiggs', 'Paola', 'Julius Caesar', 'Pat', 'Milord von den Drei Tannen', 'Perlkoenigin', 1296742444, 0, '', '0000-00-00', 0, '', '', '96', 1, 1),
+(30, 'Presco', 'Presco', 1, 25, 1, 2000, 'Bergmann\\''s Boli', 'Bergmann\\''s Bella', 'Bergmann\\''s Bolita', 'Bergmann\\''s Mahala', 'Bergmann\\''s Arpisto', 'Bergmann\\''s Harmosa', 1296743177, 0, 'request', '0000-00-00', 1, '400', '', '89', 1, 1),
+(36, 'Dawn', 'Velvet Dawn Shining of Asschatt', 2, 19, 4, 2010, 'Libertymeres Velvet Buckeroo', 'Lucky Four Twice as Shiney', 'Little Kings Black Velvet', 'NFC Rowdys Love Note', 'Lucky Four After Dark Spotacular', 'KGL Zeros Isis', 1299430496, 0, '', '0000-00-00', 0, '', 'Silver dapple pinto', '', 0, 0),
+(43, 'Billy', 'Special Delivery van Landgoed Erve op de Bekker', 1, 18, 3, 2011, 'Silver Plates Baccarra Sampson', 'Conders Done Breakin Rules', 'Little Kings Buckeroo Baccarra ', 'Little Kings Shazara Supreme', 'First Knight Breaking all the Rules', 'Cascades Top Cats Crystal Champagne', 1321097523, 0, '', '0000-00-00', 0, '', 'Buckskin', '', 0, 0),
+(44, 'Glowy', 'OFMS Born to Glow', 2, 17, 4, 2008, 'Alamos Sirs Strategy', 'Bees Neon Lights Born to Shine', 'Cross Countrys Call Me Sir', 'Ultra Dressed to Impress', 'NXS Neon Lights', 'Bees Moonlight Mist', 1329415669, 0, '', '0000-00-00', 0, '', 'silverbay pinto', '', 0, 0),
+(45, 'Foxy', 'SSM Walkers Foxy Roxy Roller', 1, 21, 3, 2012, 'WMM Thrillers Cloud Walker', 'SSM Em Pacs Aysha', 'Magic Mans Thriller', 'LTD\\\\\\''s Magical Grace', 'HCM Bucks Em Pac', 'Vaya of the Surprise Stables', 1332526113, 0, 'request', '0000-00-00', 0, '', 'Silverbay sabino with 2 blue eyes', '', 0, 0),
+(47, 'Frits', 'SSM Walkers Fast N Furious', 1, 14, 4, 2012, 'WMM Thrillers Cloud Walker', 'Sky van de Hazelberg', 'Magic Mans Thriller', 'LTD\\''s Magical Grace', 'Speciall Efforts Naughty Doll', 'Oleandra van de Piekenhof', 1334777966, 1, 'request', '0000-00-00', 0, '', 'black sabino', '', 0, 0),
+(48, 'July', 'SSM Walkers Fancy July \\"Zip Your Dress\\"', 2, 15, 4, 2012, 'WMM Thrillers Cloud Walker', 'SSM Eross Baileys & Cream', 'Magic Mans Thriller', 'LTD\\''s Magical Grace', 'H & Hs Eross of Olympus', 'Silver Star of the Fairy Tale Ranch', 1334778371, 0, '', '0000-00-00', 0, '', 'frame overo', '', 0, 0),
+(49, 'Tuffy', 'SSM Walkers For-Ever Tuff Enoff', 1, 16, 4, 2012, 'WMM Thrillers Cloud Walker', 'SSM Eross Bubble Gum', 'Magic Mans Thriller', 'LTD\\\\\\''s Magical Grace', 'H & Hs Eros of Olympus', 'Patty', 1334778637, 1, 'request', '0000-00-00', 0, '', 'Brown Sabino', '', 0, 0),
+(50, 'Chazzay', 'SSM Toet\\''s Chazzay', 2, 5, 5, 2009, 'Star\\''s Toetanchamon', 'Vaya of The Surprise Stables', 'Rabbit Hutch Ranch Charro Star', 'Special Efforts Queeny Doll', 'Speciall Efforts Pablo Picasso', 'Patty', 1342200441, 1, 'request', '0000-00-00', 0, '', 'black', '89', 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `members`
+--
+
+CREATE TABLE IF NOT EXISTS `members` (
+  `member_id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `login` varchar(60) COLLATE utf8_bin NOT NULL,
+  `pass` varchar(60) COLLATE utf8_bin NOT NULL,
+  `firstlog` int(11) DEFAULT '1',
+  PRIMARY KEY (`member_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=24 ;
+
+--
+-- Gegevens worden uitgevoerd voor tabel `members`
+--
+
+INSERT INTO `members` (`member_id`, `login`, `pass`, `firstlog`) VALUES
+(1, 'beheer', 'f5212ff3f9bac5439368462f2e791558', 1),
+(2, 'admin', '8eae06691b1521dbe86eb92eb6153d0d', 1),
+(23, 'dennis', '4a6aa76f9ae1616c07dc35e71e439565', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `nl_about`
+--
+
+CREATE TABLE IF NOT EXISTS `nl_about` (
+  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `title` varchar(60) COLLATE utf8_bin NOT NULL,
+  `text` text COLLATE utf8_bin NOT NULL,
+  `stamp` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=5 ;
+
+--
+-- Gegevens worden uitgevoerd voor tabel `nl_about`
+--
+
+INSERT INTO `nl_about` (`id`, `title`, `text`, `stamp`) VALUES
+(3, 'Welkom in onze stal!', 'Op een bijna idyllische locatie dichtbij Breda en de Belgische grens ligt een kleine doch ambitieuze minipaarden fokkerij genaamd: The Surprise Stables. \r\nSinds 2002 wordt hier vol passie en vreugde met diverse minipaarden gefokt en gewerkt. \r\nDe minipaarden zijn uitgezocht op bloedlijnen, exterieur, beweging en karakter en deze kwaliteiten worden met succes doorgefokt. De jarenlange inzet en voorliefde voor het minipaard leveren inmiddels prachtige resultaten op keuringen en in shows. \r\n\r\nWij fokken minipaarden, omdat we het fokdoel willen verbeteren en niet voor de productie.\r\n\r\nAlle minipaarden zijn geregistreerd bij het Nederlands Mini Paarden Registratie Stamboek ( NMPRS), het Nederlands Appaloosa Stamboek ( NAS), AMHA ( American Miniature Horse Association) en AMHR ( American Miniature Horse Registry). \r\n\r\nOm aan alle eisen van het NMPRS te voldoen worden onze hengsten & merries stamboek opgenomen en veterinair gekeurd. \r\nOp deze manier worden al onze veulens standaard geregistreerd in het Hoofdstamboek van het NMPRS.\r\n\r\nElk jaar worden er enkele veulens gefokt en ook dit jaar zullen er vanaf April weer enkele veulens in de wei dartelen. \r\nOm de hoeveelheid aanwezige minipaarden acceptabel te houden en ieder paardje de volle verzorging en aandacht te kunnen blijven geven worden er elk jaar ook enkele, zowel volwassen- als jonge, minipaarden te koop aangeboden. \r\nAlle paarden worden verkocht met paspoort, chip en een goede dosis informatie die niet op houdt bij de verkoop, nieuwe eigenaren kunnen altijd terecht bij de Surprise Stables als zij nog de nodige aanwijzingen over hun aankoop nodig hebben in de toekomst. \r\n\r\nZelf ben ik, Claudia Vermeulen, sinds een aantal jaren ook op diverse andere manieren actief in de miniatuur paarden wereld buiten de fokkerij om. \r\nEen aantal jaren geleden heb ik als secretaris zitting genomen in het bestuur van de International Club American Miniature Horses (ICAMH). \r\nDeze Europees georiÃ«nteerde club organiseert gedurende het jaar diverse shows en clinics waar minipaarden liefhebbers vanuit heel Europa aan deelnemen , op deze manier kunnen minipaarden eigenaren hun hobby uit  breiden door lekker met de paardjes bezig te zijn buiten hun â€œeigen weideâ€ om. \r\nTijdens de shows vertegenwoordig ik het meten van de paardjes voor zij de ring in gaan en ook als ringsteward gedurende de dag zelf. \r\n\r\nU bent van harte welkom om eens in onze stallen te komen kijken.\r\n\r\n\r\nWij staan u graag te woord en zullen u dan ook met alle plezier alle informatie verstrekken over het miniatuur paard.\r\n\r\n\r\n\r\nCursussen & Clinics die ik gevolgd heb:\r\n\r\n* NHI Paardentanden & gebits verzorging 2005\r\n* Monty Roberts Join-Up/Follow-Up 2005\r\n* NHI EHBO voor paard & ruiter 2005\r\n* NHI Beengebreken 2005\r\n* NHI Gedragsleer 2005\r\n* Monty Roberts untouchted horses 2005\r\n* Natuurlijk bekappen 2006\r\n* NHI Voeding 2006\r\n* Monty Roberts voeding & vertering 2006\r\n* Monty Roberts hengsten, merries & voortplanting 2007\r\n* ICAMH Hoe beleer ik mijn mini voor de kar 2008\r\n* ICAMH Natural Horsemanship 2008\r\n* ICAMH Clinic met Joanne Ross 2009\r\n* ICAMH Kleurvereving 2010\r\n* ICAMH Showtraining voor beginners 2010\r\n* PKC Mineralen & vitaminen 2010\r\n* PKC Gras & Ruwvoer 2010\r\n* Clinic BBB training bij uw paard 2010\r\n* ICAMH Clinic Mike Rosauer 2011\r\n* Scheer clinic met Brooke the Clippergirl 2012\r\n* ICAMH Clinic Mike Rosauer 2012\r\n* Silverlinde TTouch 2012\r\n\r\n\r\n\r\n\r\n\r\n\r\n', 1299011225);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `nl_breedterms`
+--
+
+CREATE TABLE IF NOT EXISTS `nl_breedterms` (
+  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `title` varchar(60) COLLATE utf8_bin NOT NULL,
+  `text` text COLLATE utf8_bin NOT NULL,
+  `stamp` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=2 ;
+
+--
+-- Gegevens worden uitgevoerd voor tabel `nl_breedterms`
+--
+
+INSERT INTO `nl_breedterms` (`id`, `title`, `text`, `stamp`) VALUES
+(1, 'Dekvoorwaarden', 'Onze hengsten staan ter dekking voor een beperkt aantal merries van buitenaf.\r\nEr word niet gereisd met onze hengsten, er is dan ook voldoende stalling en weidegang aanwezig.\r\n\r\nHet dekgeld dient te worden betaald bij het brengen van de merrie(s).\r\nEventuele andere kosten dienen te worden betaald \r\nbij het ophalen van de merrie (s).\r\n\r\nMerries die worden aangeboden voor dekking dienen in een goede gezondheid te verkeren en behoren te beschikken over een geldig inentings boekje.\r\nDe merrie dient geent te zijn tegen influenza en tetanus.\r\n\r\nDe merrie dient goed ontwormt te zijn en onbeslagen.\r\n\r\nU betaald bij ons â‚¬ 25,00 per week aan verblijfskosten voor uw merrie en eventuele veulen.\r\nUw merrie en eventueel veulen zullen zoveel gras en hooi krijgen als zij maar willen en krijgen eenmaal daags brokken.\r\nIndien u wenst kunnen wij uw merrie laten scannen, wel behoren er 6 weken tussen de laatste dekking en het scannen te zitten. Eventuele kosten hiervan zijn voor eigen rekening.\r\n\r\nIndien uw merrie en haar eventuele veulen langer dan 6 weken bij ons op stal zijn, zullen wij de merrie en haar eventuele veulen ontwormen met een ivermectine pasta.\r\nHier zijn dan ook geen kosten aan verbonden.\r\n\r\nOok vragen wij u een kopie van het paspoort en\r\nentings boekje mee te nemen.\r\n\r\nIndien de merrie gust blijkt mag de merrie het volgende dekseizoen gratis opnieuw gedekt worden.\r\nWel dient het verblijf betaald te worden en eventuele overige kosten.\r\nIn overleg mag de herdekking overgedragen worden op een andere merrie van dezelfde eigenaar.\r\nDe herdekking is maar eenmalig geldig.\r\n\r\nWij behouden het recht om bij plotselinge ziekte of een ongeval van een gast merrie en eventueel veulen, een dierenarts in te schakelen.\r\nDe kosten hiervan zijn voor rekening van de eigenaar.\r\n\r\nWij zijn niet aansprakelijk voor schade bij het in de wei brengen, het dekken, bij ziekte, ongevallen, dood en waardevermindering van de merrie en/of haar aan de voetlopende veulen ongeacht de oorzaak hiervan.\r\n\r\nDe eigenaar van de merrie en eventuele veulen is aansprakelijk voor de schade door zijn dier (en) aangericht.\r\n\r\nWij zullen uw merrie en eventueel veulen met de grootste zorg en liefde behandelen.\r\nGedurende het dekseizoen zullen wij er dan ook alles aan doen om uw merrie op de natuurlijke manier dragend te krijgen.\r\n\r\nWij gaan ervan uit dat wanneer u uw merrie en eventueel veulen bij ons aanbied, u de bovenstaande voorwaarden heeft gelezen en hier akkoord met gaat.\r\n', 1302262394);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `nl_horses`
+--
+
+CREATE TABLE IF NOT EXISTS `nl_horses` (
+  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `title` varchar(60) COLLATE utf8_bin NOT NULL,
+  `text` text COLLATE utf8_bin NOT NULL,
+  `stamp` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=59 ;
+
+--
+-- Gegevens worden uitgevoerd voor tabel `nl_horses`
+--
+
+INSERT INTO `nl_horses` (`id`, `title`, `text`, `stamp`) VALUES
+(9, 'Informatie', 'Presco heeft in 2009 zijn levensgoedkeuring behaald bij het NMPRS\r\n\r\nIn 2010 behaalde hij zijn derde 1A premie, hier mee behaalde hij zijn Ster en werd vanwege zijn nakomelingen ook nog Preferent.\r\n\r\n\r\n\r\n', 1296743177),
+(8, 'Uitslag kleuren test', 'Walker is zwart en is dubbel getest op het sabino gen, u heeft dus altijd kan op bonte of overo aftekeningen.\r\nHij is negatief getest op LWO.', 1296684242),
+(20, 'Ter Dekking', 'Walker is beschikbaar voor een beperkt aantal merries.\r\n\r\nDekgeld: â‚¬ 750.00\r\nStalling: â‚¬ 25.00 per week', 1296684242),
+(15, 'Uitslag kleuren test', 'a/a:  Zwart pigment is over aanwezig in de haar.\r\nE/e:  Zowel de rode als de zwarte factor is aanwezig.\r\n', 1296740469),
+(16, 'Uitslag kleuren test', 'N/Z:  Vaya is heterozygoot, verdunt, een kopie van het Silverdapple gen.\r\n', 1296741800),
+(22, 'Ter Dekking', 'Presco staat ter dekking voor een beperkt aantal merries.\r\n\r\nDekgeld: â‚¬ 400.00\r\nStalling: â‚¬ 25.00 per week', 1296743177),
+(26, '', 'Walker is een jonge hengst met een veel belovende toekomst voor zich. \r\nDeze jongeman heeft het dan ook allemaal. \r\nDe verfijning, de mooie lange benen, de uitstraling, de prachtige blauwe ogen en de genen! \r\nZijn stamboom bevat namen als LTD\\''S Magic Man, Little Kings Firebuck (= een zoon van Boones little Buckeroo) en niet te vergeten de beroemde Little Kings Santana Supreme.\r\n\r\nWalker is getest op kleur en blijkt dan ook homozygoot zwart te zijn, dat betekent dus dat hij geen vos of chestnut nakomelingen geeft.Ook blijkt hij homozygoot sabino te zijn en dit betekent dat zijn nakomelingen veel kleur zullen hebben. \r\nDit kunnen bv. enkele witte sokken zijn, maar hoogstwaarschijnlijk zal hij prachtige pinto aftekeningen geven aan zijn veulens en natuurlijk niet te vergeten die schitterende blauwe ogen.\r\n\r\nHoe dicht wilt u in de buurt komen van de beroemde LTD bloedlijnen??\r\nDichterbij dan dit kan dan ook bijna niet....\r\nMet zijn afstamming en zijn looks is Walker een belofte voor de toekomst en de kleurenfokkerij!\r\n\r\nWalker is in 2007 goedgekeurd bij het NMPRS en dat maakt hem de enige goedgekeurde dubbel sabino hengst die ter dekking staat!\r\n\r\nBent u dus opzoek naar een hengst met uitstraling, een goed karakter en beweging, maar die uw veulens giganitisch veel kleur geeft en misschien ook wel die mooie blauwe ogen?\r\nDan moet u niet langer zoeken en gewoon een dekking met Walker boeken.\r\n\r\n', 1296684242),
+(45, '', 'Foxy Roxy Roller is een Arabisch-type, met een mooi fijn dishy hoofdje, een mooie lange hals, een hoge staart aanzet, en een fantastische conformatie. Hij heeft een mooi bruine kleur die verrijkt word door het sprankelende zilver gen in zijn manen en staart en een paar hele mooie fel blauwe ogen! Hij is echt een lust voor het oog!\r\nZijn moeder Em Pac Aysha is een merrie met hoge showqualiteiten, zij heeft dan ook meerder kampioens titels op haar naam gezet, en dit alles is terug te zien in Foxy Roxy Roller. Zonder twijfel ben ik er dan ook zeker van dat dit een zeer mooie hengst zal worden voor uw toekomstige fokkerij, met een zee van kleuren en conformatie.\r\nTwee zeer goede bloedlijnen hebben er voor gezorgd dat deze kruising zo geworden is; LTDS Magic Man & Boones Little Buckeroo. Wij zijn er dan ook van overtuigd dat we nog veel terug gaan zien van deze jonge man in de toekomst!\r\n\r\n', 1332526113),
+(50, '', 'Fancy July is een fantastisch merrietje, die ook nog eens frame overo is met twee sprankelende blauwe ogen. Ze ziet er dan ook echt uit als een groot paardâ€¦.maar dan in het klein. Zij is wat je noemt een â€œBarbie Dollâ€, ze heeft body, een kleine dish, lange benen, een hoge staart aanzet, een fantastische hals en mooie oortjes. Haar vader, Walker, is homozygoot voor zwarte en sabino. Haar moeder Eross Baileys & Cream heeft de overo factor en deze twee samen maken de kleur van Fancy July zo gigantisch spectaculair! Deze jonge dame zal een grote kleuren bom worden voor de fokkerij.\r\nFancy July zal volgend jaar geshowd gaan worden en ik kan dan ook niet wachten om haar daar te zien staan, want daar hoort ze!\r\n', 1334778371),
+(51, '', 'Deze kleine jongeman kwam de wereld in om alles en iedereen die hem ziet te overweldigen!\r\nFor-Ever Tuff Enoff is zeer elegant en fijn gebouwd, met een mooie rechte rug en lange benen. Ook heeft hij de meest mooie donker blauwe ogen waar je in weg kunt dromen en een fantastische lange nek! Hij komt uit een van mijn favoriete merries Bubble Gum, met een mooie lange nek, goed gelijnd en een rechte toplijn waar miniatuur paarden fokkers voor streven tijdens het fokken. For-Ever Tuff Enoffâ€™s sire is Walker, een homozygote hengst voor zwart en sabino met in zijn stamboom de beroemde LTDS Magic Man.\r\nFor-Ever Tuff Enoff zal een zeer goed show paard en toekomstige dekhengst worden, de verwachtingen voor hem liggen dan ook erg hoog. \r\n', 1334778637),
+(52, '', 'Fast N Furious is een echte Arabier in het klein. Dit is een zeer fijn gebouwd hengstje, met een klassiek Arabisch hoofdje en een klein neusje, mooie hals aanzet, hoge staart aanzet en zeer lieve oortjes. Hij komt uit een hele goede familie met aan beide kanten Kampioenen. Wij verwachten dat hij uitgroeit tot een hoogte van ongeveer 81cm op de schoft, dus hij blijft klein. Zijn vader en zijn moeder zijn beide homozogoot voor het zwarte gen en via zijn vader heeft hij het sabino gen als extraatje. Dit kan dan ook de start zijn van iets moois en kleurrijks voor zijn toekomstige nakomelingen, als hij oud genoeg is om zijn eigen kudde met dames te hebben.', 1334777966),
+(54, '', 'Wij bieden deze merrie te koop aan namens vrienden.\r\nHet is een correcte en vriendelijke merrie met een fantastische draf!\r\nOok is het mogelijk om de merrie bij ons te laten dekken.\r\n\r\nOmdat de Chazzay weg moet vanwege ruimte gebrek is ze aantrekkelijk geprijsd!\r\n\r\nPrijs: â‚¬ 1500.00\r\ndrachtig van Thrillers Cloud Walker: â‚¬ 2100.00', 1342200441),
+(56, '', 'Special Delivery, Briljante Buckskin hengstje. Een afstamming van de hengst Silver Plates Baccara Sampson en uit een First Knights Bit O Hot Shot dochter. \r\nZijn nakomelingen staan bekend on hun mooi hoofden en lange nekken.  \r\nZe is een volle zus van de wereldkampioen Conders Exeption To The Rules en een dochter van de top 5 merrie Buckeroos top Cat. \r\nSpecial Delivery heeft raffinement. Grote bewegingen en moderne bloedlijnen. \r\nZijn mooi voorkomen zal je hart doen smelten.', 1321097523);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `nl_index`
+--
+
+CREATE TABLE IF NOT EXISTS `nl_index` (
+  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `title` varchar(60) COLLATE utf8_bin NOT NULL,
+  `text` text COLLATE utf8_bin NOT NULL,
+  `stamp` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=15 ;
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `offspring`
+--
+
+CREATE TABLE IF NOT EXISTS `offspring` (
+  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_bin NOT NULL,
+  `gender` int(5) NOT NULL,
+  `dobday` int(5) NOT NULL,
+  `dobmonth` int(5) NOT NULL,
+  `dobyear` int(10) NOT NULL,
+  `parent` varchar(255) COLLATE utf8_bin NOT NULL,
+  `results` text COLLATE utf8_bin NOT NULL,
+  `stamp` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=79 ;
+
+--
+-- Gegevens worden uitgevoerd voor tabel `offspring`
+--
+
+INSERT INTO `offspring` (`id`, `name`, `gender`, `dobday`, `dobmonth`, `dobyear`, `parent`, `results`, `stamp`) VALUES
+(22, ' S.S.M. Eross Bacardi & Coke', 1, 14, 6, 2008, ' H &  Hs Eros of Olympus', '', 1296729702),
+(21, 'S.S.M. WalkerÂ´s Dynasty Lady', 2, 1, 5, 2010, 'Vaya of the Surprise Stables', '', 1296684242),
+(23, ' S.S.M. StarÂ´s Wild Rose', 2, 17, 6, 2005, ' Rabbit Hutch Ranch Charro Star', '', 1296729702),
+(24, 'Toet''s Casey Black', 1, 26, 5, 2009, 'Star''sToetanchamon', '', 1296729702),
+(25, 'Star''s Aim for Fame', 1, 27, 6, 2007, 'Rabbit Hutch Ranch Charro Star', '', 1296729702),
+(26, ' Vaya of the Surprise stables', 2, 27, 5, 2004, ' Special Effort''s Pablo Picasso', '', 1296742444),
+(27, ' S.S.M. Presco''s Bubble Gum', 2, 9, 6, 2008, ' Presco', '', 1296742444),
+(28, ' S.S.M. Presco''s Dean Maddy', 1, 5, 5, 2010, ' Presco', '', 1296742444),
+(29, ' S.S.M. Presco''s Cha Cha Cha', 2, 4, 5, 2009, ' Presco', '', 1296742444),
+(30, 'S.S.M. Star''s Waterfall Riverdance', 1, 29, 4, 2005, 'Rabbit Hutch Ranch Charro Star', '', 1296742444),
+(31, 'S.S.M. Superstar''s Zita Jones', 2, 8, 5, 2006, 'MH Superstar', '', 1296742444),
+(67, 'S.S.M. Presco\\''s Dean Maddy', 1, 5, 5, 2010, 'Patty', '', 1296743177),
+(66, 'S.S.M. Presco\\''s Double Jeopardy', 1, 1, 5, 2010, 'Texas Girl', '', 1296743177),
+(64, 'S.S.M. Presco\\''s Cha Cha Cha', 2, 4, 5, 2009, 'Patty', '', 1296743177),
+(65, 'S.S.M. Presco\\''s Casjmira', 2, 12, 5, 2009, 'Bergmanns Flecha Veloz', '2e premie', 1296743177),
+(43, 'S.S.M. Presco\\''s Coco Chanell', 2, 20, 3, 2009, 'Carina Star', '', 1296743177),
+(44, 'S.S.M. Presco\\''s Chico Star', 1, 14, 5, 2009, 'Silver Star of the Fairy Tale Ranch', '', 1296743177),
+(45, 'S.S.M. Presco\\''s Walking Shadow', 1, 7, 6, 2005, 'Birkenhoeve\\''s Bianca', '1e premie', 1296743177),
+(46, 'S.S.M. Presco\\''s Xtreme Boomer', 1, 19, 4, 2006, 'Silver Star of the Fairy Tale Ranch', '', 1296743177),
+(47, 'S.S.M Presco\\''s Yankee Magic', 1, 29, 4, 2006, 'Gerrie', '', 1296743177),
+(48, 'S.S.M. Presco\\''s Amazn Grace', 2, 14, 4, 2007, 'Sierra', '', 1296743177),
+(49, 'S.S.M. Presco\\''s Arrow Speed', 1, 14, 5, 2007, 'Silver Star of the Fairy Tale Ranch', '1e premie', 1296743177),
+(50, 'S.S.M. Presco\\''s Armani & Gucci 2N1', 1, 1, 6, 2007, 'Carina Star', '1e premie', 1296743177),
+(51, 'S.S.M. Presco\\''s Bobby Brown', 1, 14, 8, 2008, 'Corrien van de Heesbeekhoeve', '', 1296743177),
+(56, ' WMM Thrillers Cloud Walker', 2, 18, 4, 2011, ' WMM Thrillers Cloud Walker', '', 1296729702),
+(58, 'Em Pacs Aysha', 2, 4, 5, 2007, 'HCM Bucks Em Pac', '', 1296741800),
+(59, 'Walkers Dynasty Lady', 2, 1, 5, 2010, 'WMM Thrillers Cloud Walker', '', 1296741800),
+(60, 'Eross Beyonce', 2, 8, 5, 2008, 'H & Hs Eross of Olympus', '', 1296741800),
+(61, 'Toet\\''s Chazzay', 2, 5, 5, 2009, 'Stars Toetanchamon', '', 1296741800),
+(63, 'S.S.M. Prseco\\''s Eddie ZoÃ«', 1, 24, 4, 2011, 'Texas Girl', '', 1296743177),
+(69, 'S.S.M. Walker\\''s Call Me Blue I Joe', 1, 11, 5, 2009, 'S.S.M. Star\\''s Wild Rose', '', 1296684242),
+(70, 'S.S.M. Walker\\''s Elyjah Jane', 2, 18, 4, 2011, 'Sky van de Hazelberg', '', 1296684242),
+(71, 'Stal Oud Laar Design', 2, 1, 5, 2010, 'Treasure van de Goudakkers', '', 1296684242),
+(72, 'SSM Walkers Foxy Roxy Roller', 1, 21, 3, 2012, 'WMM Thrillers Cloud Walker', '', 1296734632),
+(73, 'S.S.M. Walkers Foxy Roxy Roller', 1, 21, 3, 2012, 'S.S.M. Em Pacs Aysha', '', 1296684242),
+(74, ' SSM Walkers For-Ever Tuff Enoff', 0, 16, 3, 2012, ' WMM Thrillers Cloud Walker', '', 1296740469),
+(75, ' SSM Walkers Fast N Furious', 0, 14, 4, 2012, ' WMM Thrillers Cloud Walker', '', 1296729702),
+(77, ' SSM Walkers Fancy July \\\\', 0, 15, 4, 2012, ' WMM Thrillers Cloud Walker', '', 1296731806),
+(78, 'SSM Walkers Flashing Mr. Brooklynn', 1, 7, 4, 2012, 'WMM Thrillers Cloud Walker', '', 1296741800);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `picture`
+--
+
+CREATE TABLE IF NOT EXISTS `picture` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `image` varchar(225) COLLATE utf8_bin NOT NULL,
+  `stamp` varchar(12) COLLATE utf8_bin NOT NULL,
+  `main_image` int(11) NOT NULL,
+  `gallery` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=481 ;
+
+--
+-- Gegevens worden uitgevoerd voor tabel `picture`
+--
+
+INSERT INTO `picture` (`id`, `image`, `stamp`, `main_image`, `gallery`) VALUES
+(130, '1296683862.jpg', '0', 0, 0),
+(142, '1296728202.jpg', '0', 0, 0),
+(312, '1311615545.jpg', '1296684242', 0, 0),
+(341, '1311616838.jpg', '0', 1, 0),
+(141, '1296728145.jpg', '0', 0, 0),
+(294, '1306865896.jpg', '0', 0, 0),
+(293, '1306865881.jpg', '0', 0, 0),
+(311, '1311615524.jpg', '1296684242', 0, 0),
+(131, '1296683917.jpg', '0', 0, 1),
+(310, '1311615500.jpg', '1296684242', 1, 1),
+(300, '1306866128.jpg', '0', 0, 0),
+(126, '1296677980.jpg', '0', 0, 0),
+(125, '1296677939.jpg', '0', 0, 0),
+(137, '1296727933.jpg', '0', 0, 1),
+(124, '1296677882.jpg', '0', 0, 1),
+(326, '1311616051.jpg', '0', 0, 0),
+(321, '1311615905.jpg', '0', 0, 0),
+(320, '1311615879.jpg', '0', 0, 0),
+(319, '1311615859.jpg', '0', 0, 0),
+(318, '1311615844.jpg', '0', 1, 0),
+(325, '1311616033.jpg', '0', 0, 0),
+(324, '1311616013.jpg', '0', 0, 0),
+(323, '1311615998.jpg', '0', 0, 0),
+(322, '1311615980.jpg', '0', 0, 0),
+(346, '1311617008.jpg', '1296729702', 0, 0),
+(345, '1311616984.jpg', '1296729702', 1, 0),
+(344, '1311616956.jpg', '1296729702', 0, 0),
+(368, '1311617755.jpg', '1299430496', 1, 1),
+(369, '1311617769.jpg', '1299430496', 0, 0),
+(352, '1311617244.jpg', '0', 1, 0),
+(347, '1311617114.jpg', '1296731806', 0, 0),
+(348, '1311617133.jpg', '1296731806', 0, 0),
+(349, '1311617152.jpg', '1296731806', 1, 0),
+(164, '1296734948.jpg', '1296734632', 1, 0),
+(165, '1296734981.jpg', '1296734632', 0, 0),
+(166, '1296735006.jpg', '1296734632', 0, 1),
+(167, '1296735038.jpg', '1296734632', 0, 0),
+(168, '1296735052.jpg', '1296734632', 0, 0),
+(169, '1296735066.jpg', '1296734632', 0, 1),
+(170, '1296740607.jpg', '1296740469', 1, 1),
+(171, '1296740625.jpg', '1296740469', 0, 0),
+(172, '1296740676.jpg', '1296740469', 0, 1),
+(173, '1296740701.jpg', '1296740469', 0, 0),
+(174, '1296740729.jpg', '1296740469', 0, 0),
+(175, '1296741733.jpg', '0', 0, 0),
+(176, '1296741746.jpg', '0', 0, 0),
+(182, '1296742645.jpg', '1296742444', 1, 0),
+(358, '1311617399.jpg', '1296741800', 0, 0),
+(357, '1311617379.jpg', '1296741800', 0, 0),
+(356, '1311617363.jpg', '1296741800', 0, 0),
+(355, '1311617344.jpg', '1296741800', 1, 1),
+(183, '1296742685.jpg', '1296742444', 0, 0),
+(184, '1296742702.jpg', '1296742444', 0, 0),
+(185, '1296742715.jpg', '1296742444', 0, 0),
+(186, '1296742729.jpg', '1296742444', 0, 0),
+(187, '1296743356.jpg', '1296743177', 0, 1),
+(331, '1311616369.jpg', '1296743177', 0, 1),
+(190, '1296743422.jpg', '1296743177', 0, 0),
+(191, '1296743474.jpg', '1296743177', 0, 0),
+(192, '1296743517.jpg', '1296743177', 0, 0),
+(332, '1311616384.jpg', '1296743177', 0, 0),
+(360, '1311617505.jpg', '0', 1, 0),
+(361, '1311617520.jpg', '0', 0, 0),
+(256, '1302459790.jpg', '1302262394', 0, 0),
+(362, '1311617538.jpg', '0', 0, 0),
+(315, '1311615621.jpg', '1296684242', 0, 0),
+(314, '1311615597.jpg', '1296684242', 0, 1),
+(364, '1311617620.jpg', '0', 0, 0),
+(316, '1311615740.jpg', '1296684242', 0, 0),
+(274, '1304543725.jpg', '0', 0, 0),
+(259, '1303488112.jpg', '0', 0, 0),
+(260, '1303488205.jpg', '0', 0, 0),
+(261, '1303488231.jpg', '', 0, 0),
+(262, '1303488272.jpg', '0', 0, 0),
+(263, '1303488334.jpg', '0', 0, 0),
+(264, '1304542823.jpg', '0', 0, 0),
+(337, '1311616673.jpg', '0', 0, 0),
+(266, '1304542928.jpg', '0', 0, 0),
+(342, '1311616851.jpg', '0', 0, 0),
+(268, '1304543031.jpg', '0', 0, 0),
+(343, '1311616863.jpg', '0', 0, 0),
+(270, '1304543143.jpg', '0', 0, 0),
+(336, '1311616653.jpg', '0', 0, 0),
+(272, '1304543620.jpg', '0', 0, 0),
+(273, '1304543671.jpg', '0', 0, 0),
+(275, '1304544621.jpg', '0', 0, 1),
+(276, '1304544707.jpg', '0', 0, 0),
+(277, '1304544755.jpg', '0', 0, 0),
+(278, '1304544822.jpg', '0', 0, 0),
+(279, '1304544912.jpg', '0', 0, 0),
+(351, '1311617189.jpg', '1296731806', 0, 0),
+(281, '1305226084.jpg', '0', 0, 0),
+(350, '1311617171.jpg', '1296731806', 0, 0),
+(283, '1305226228.jpg', '1296731806', 0, 0),
+(284, '1305226313.jpg', '0', 0, 0),
+(285, '1305226404.jpg', '0', 0, 0),
+(286, '1305226461.jpg', '0', 0, 0),
+(287, '1305226516.jpg', '0', 0, 0),
+(383, '1311618171.jpg', '0', 0, 1),
+(382, '1311618157.jpg', '0', 0, 0),
+(381, '1311618138.jpg', '0', 0, 0),
+(380, '1311618122.jpg', '0', 0, 0),
+(379, '1311618102.jpg', '0', 1, 0),
+(295, '1306865913.jpg', '0', 1, 1),
+(296, '1306865931.jpg', '0', 0, 0),
+(297, '1306865947.jpg', '0', 0, 1),
+(298, '1306865964.jpg', '0', 0, 1),
+(299, '1306865985.jpg', '0', 0, 0),
+(301, '1306866145.jpg', '0', 1, 1),
+(302, '1306866164.jpg', '0', 0, 0),
+(303, '1306866181.jpg', '0', 0, 0),
+(304, '1307275873.jpg', '0', 0, 0),
+(305, '1307275892.jpg', '0', 0, 1),
+(306, '1307275917.jpg', '0', 0, 0),
+(307, '1307275953.jpg', '0', 0, 1),
+(308, '1307644955.jpg', '0', 0, 0),
+(309, '1307645024.jpg', '0', 0, 0),
+(317, '1311615771.jpg', '1296684242', 0, 0),
+(327, '1311616068.jpg', '0', 1, 1),
+(328, '1311616086.jpg', '0', 0, 0),
+(329, '1311616106.jpg', '0', 0, 0),
+(388, '1318274262.jpg', '', 0, 0),
+(333, '1311616482.jpg', '1296743177', 0, 0),
+(334, '1311616524.jpg', '1296743177', 0, 0),
+(335, '1311616554.jpg', '1296743177', 1, 1),
+(338, '1311616691.jpg', '0', 1, 1),
+(339, '1311616710.jpg', '0', 0, 0),
+(340, '1311616727.jpg', '0', 0, 0),
+(353, '1311617257.jpg', '0', 0, 0),
+(354, '1311617267.jpg', '0', 0, 0),
+(359, '1311617413.jpg', '1296741800', 0, 0),
+(363, '1311617554.jpg', '0', 0, 0),
+(365, '1311617637.jpg', '0', 0, 0),
+(366, '1311617669.jpg', '0', 1, 0),
+(367, '1311617686.jpg', '0', 0, 0),
+(370, '1311617783.jpg', '1299430496', 0, 0),
+(371, '1311617796.jpg', '1299430496', 0, 0),
+(372, '1311617810.jpg', '1299430496', 0, 0),
+(373, '1311617827.jpg', '1299430496', 0, 1),
+(374, '1311617843.jpg', '1299430496', 0, 0),
+(375, '1311617917.jpg', '0', 0, 0),
+(376, '1311617938.jpg', '0', 0, 0),
+(377, '1311617964.jpg', '0', 0, 1),
+(378, '1311618016.jpg', '0', 1, 0),
+(384, '1311618266.jpg', '1296684242', 0, 1),
+(390, '1322502683.jpg', '1321097523', 1, 0),
+(391, '1322502739.jpg', '1321097523', 0, 0),
+(398, '1329505101.jpg', '1329415669', 0, 0),
+(399, '1329505119.jpg', '1329415669', 1, 0),
+(407, '1333041672.jpg', '1332526113', 0, 0),
+(404, '1333041350.jpg', '1332526113', 0, 0),
+(405, '1333041453.jpg', '1332526113', 0, 0),
+(408, '1333041770.jpg', '1332526113', 0, 0),
+(409, '1333041890.jpg', '1332526113', 0, 0),
+(410, '1333828327.jpg', '0', 0, 0),
+(411, '1333828431.jpg', '0', 0, 0),
+(412, '1333828549.jpg', '0', 0, 0),
+(413, '1333828688.jpg', '1332526113', 0, 0),
+(414, '1333828794.jpg', '1332526113', 0, 0),
+(415, '1334778267.jpg', '1334777966', 0, 0),
+(416, '1334778620.jpg', '1334778371', 0, 0),
+(417, '1335894535.jpg', '0', 1, 1),
+(418, '1335894554.jpg', '0', 0, 1),
+(419, '1335895278.jpg', '1332526113', 0, 0),
+(420, '1335895387.jpg', '1332526113', 0, 0),
+(421, '1335895511.jpg', '1332526113', 0, 0),
+(422, '1335895681.jpg', '0', 0, 0),
+(423, '1335895789.jpg', '0', 0, 0),
+(424, '1335895952.jpg', '0', 0, 0),
+(425, '1335896408.jpg', '1334777966', 0, 0),
+(426, '1335896506.jpg', '1334777966', 0, 0),
+(427, '1335897175.jpg', '1334777966', 0, 0),
+(428, '1335897290.jpg', '1334777966', 0, 0),
+(429, '1335897530.jpg', '1334778637', 0, 0),
+(430, '1335897631.jpg', '1334778637', 0, 0),
+(431, '1335897758.jpg', '1334778637', 0, 0),
+(432, '1335897888.jpg', '1334778637', 0, 0),
+(433, '1335898252.jpg', '1334778637', 0, 0),
+(434, '1335898403.jpg', '1334778371', 0, 0),
+(435, '1335898534.jpg', '1334778371', 0, 0),
+(436, '1335898667.jpg', '1334778371', 0, 0),
+(437, '1335898798.jpg', '1334778371', 0, 0),
+(438, '1335898905.jpg', '1334778371', 0, 0),
+(439, '1335899026.jpg', '1334778371', 0, 0),
+(440, '1335899134.jpg', '1334778371', 0, 0),
+(441, '1341596096.jpg', '1332526113', 0, 1),
+(442, '1341596115.jpg', '1332526113', 0, 0),
+(443, '1341596124.jpg', '1332526113', 0, 0),
+(444, '1341596135.jpg', '1332526113', 0, 1),
+(445, '1341596146.jpg', '1332526113', 1, 0),
+(446, '1341596160.jpg', '1332526113', 0, 0),
+(447, '1341596231.jpg', '0', 0, 0),
+(448, '1341596245.jpg', '0', 0, 1),
+(449, '1341596259.jpg', '0', 0, 0),
+(450, '1341596276.jpg', '0', 0, 0),
+(451, '1341596295.jpg', '0', 1, 1),
+(452, '1341596310.jpg', '0', 0, 0),
+(453, '1341596370.jpg', '1334778371', 0, 1),
+(454, '1341596384.jpg', '1334778371', 1, 0),
+(455, '1341596399.jpg', '1334778371', 0, 0),
+(456, '1341596419.jpg', '1334778371', 0, 1),
+(457, '1341596432.jpg', '1334778371', 0, 0),
+(458, '1341596446.jpg', '1334778371', 0, 0),
+(459, '1341596822.jpg', '0', 0, 0),
+(460, '1341596855.jpg', '1334778637', 0, 0),
+(461, '1342018034.jpg', '1334778637', 1, 1),
+(462, '1342018053.jpg', '1334778637', 0, 0),
+(463, '1342018067.jpg', '1334778637', 0, 0),
+(464, '1342018080.jpg', '1334778637', 0, 0),
+(465, '1342018157.jpg', '1334778637', 0, 0),
+(466, '1342018231.jpg', '1334778637', 0, 1),
+(467, '1342018277.jpg', '1334777966', 0, 0),
+(468, '1342018287.jpg', '1334777966', 0, 1),
+(469, '1342018303.jpg', '1334777966', 1, 1),
+(470, '1342018315.jpg', '1334777966', 0, 0),
+(471, '1342018389.jpg', '1334777966', 0, 0),
+(472, '1342019648.jpg', '1299011225', 0, 1),
+(473, '1342019811.jpg', '1334778637', 0, 1),
+(474, '1342200899.jpg', '1342200441', 0, 0),
+(475, '1342201158.jpg', '1342200441', 0, 0),
+(476, '1342201306.jpg', '1342200441', 0, 0),
+(477, '1342201420.jpg', '1342200441', 1, 0),
+(478, '1342201617.jpg', '1342200441', 0, 0),
+(479, '1342201734.jpg', '1342200441', 0, 0),
+(480, '1342201835.jpg', '1342200441', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `registration`
+--
+
+CREATE TABLE IF NOT EXISTS `registration` (
+  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `organisation` varchar(50) COLLATE utf8_bin NOT NULL,
+  `registration` varchar(50) COLLATE utf8_bin NOT NULL,
+  `stamp` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=75 ;
+
+--
+-- Gegevens worden uitgevoerd voor tabel `registration`
+--
+
+INSERT INTO `registration` (`id`, `organisation`, `registration`, `stamp`) VALUES
+(37, 'NMPRS', 'VRA16236VRA', 1296729702),
+(33, 'NMPRS', '528007200602717', 1296684242),
+(32, 'AMHR ', '278139A', 1296684242),
+(55, 'AMHA ', 'Pending', 1299430496),
+(39, 'NMPRS', '528007200804148', 1296731806),
+(40, 'NMPRS', '528007200702917', 1296734632),
+(41, 'NMPRS', '528007200804144', 1296740469),
+(67, 'AMHA', '', 1321097523),
+(43, 'NMPRS', '528013020043475', 1296741800),
+(44, 'NAS', '2059', 1296742444),
+(45, 'BMP', '180593V0246', 1296742444),
+(46, 'NMPRS', 'CKLM7759VRAC', 1296743177),
+(66, 'NMPRS', 'VRAC528007201100127', 1321097523),
+(57, 'NMPRS', '528007201000259', 1299430496),
+(68, 'AMHA', 'A 185475', 1329415669),
+(69, 'nmprs', '', 1332526113),
+(71, 'NMPRS', '', 1334777966),
+(72, 'NMPRS', '', 1334778371),
+(73, 'NMPRS', '', 1334778637),
+(74, 'nmprs', '', 1342200441);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `results`
+--
+
+CREATE TABLE IF NOT EXISTS `results` (
+  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `resday` int(5) NOT NULL,
+  `resmonth` int(5) NOT NULL,
+  `resyear` int(10) NOT NULL,
+  `organisation` varchar(100) COLLATE utf8_bin NOT NULL,
+  `showname` varchar(100) COLLATE utf8_bin NOT NULL,
+  `showclass` varchar(100) COLLATE utf8_bin NOT NULL,
+  `result` varchar(100) COLLATE utf8_bin NOT NULL,
+  `stamp` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=88 ;
+
+--
+-- Gegevens worden uitgevoerd voor tabel `results`
+--
+
+INSERT INTO `results` (`id`, `resday`, `resmonth`, `resyear`, `organisation`, `showname`, `showclass`, `result`, `stamp`) VALUES
+(8, 12, 5, 2008, 'ICAMH', 'Miniature Extravaganza', 'Liberty 34" & under', '2nd place', 1296684242),
+(7, 12, 5, 2008, 'ICAMH', 'Miniature Extravaganza ', 'Two year old stallion 33"  & under', '2nd place', 1296684242),
+(9, 12, 5, 2008, 'ICAMH', 'Miniature Extravaganza', 'Solid color A Division Stallion', '1st place', 1296684242),
+(10, 19, 7, 2008, 'ICAMH', 'Summershow', 'Model stallions 2yr & older  34" & under', '2nd place', 1296684242),
+(11, 19, 7, 2008, 'ICAMH', 'Summershow', 'Solid color A Division Stallion', '1st place', 1296684242),
+(12, 4, 4, 2009, 'NMPRS', 'Hengstenkeuring', 'kleine maat luxe', '2e premie', 1296684242),
+(13, 10, 4, 2010, 'NMPRS', 'Hengstenkeuring', 'kleine maat luxe', '1e premie', 1296684242),
+(14, 10, 8, 2002, 'NMPRS', 'Merriekeuring', 'merrie veulens minimaat luxe', '2e premie', 1296729702),
+(15, 9, 8, 2003, 'NMPRS', 'Merriekeuring', 'enters minimaat luxe', '1e premie', 1296729702),
+(16, 31, 7, 2004, 'NMPRS', 'Merriekeuring', 'Twenters minimaat luxe', '2e premie', 1296729702),
+(17, 30, 7, 2005, 'NMPRS', 'Merriekeuring', '3 jarige merries ', '2e premie', 1296729702),
+(18, 31, 7, 2005, 'NMPRS', 'Merriekeuring', 'Stamboek opname', 'goedgekeurd', 1296729702),
+(19, 29, 7, 2006, 'NMPRS', 'Merriekeuring', '3 jarige merries', '2e premie', 1296729702),
+(20, 23, 8, 2008, 'NMPRS', 'Merriekeuring', 'merrie veulens minimaat luxe', '2e premie', 1296731806),
+(21, 28, 8, 2010, 'NMPRS', 'Merriekeuring', 'Twenters minimaat luxe', '2e premie', 1296731806),
+(22, 23, 8, 2008, 'NMPRS', 'Merriekeuring', 'merrie veulens kleine maat luxe', '1e premie', 1296740469),
+(23, 28, 8, 2010, 'NMPRS', 'Merriekeuring', 'Twenters kleine maat luxe', '2e premie', 1296740469),
+(24, 1, 5, 2010, 'ICAMH', 'Spring Fling Funshow', '2yr old mares 33 - 37', '2nd place  NMPRS judge', 1296740469),
+(25, 1, 5, 2010, 'ICAMH', 'Spring Fling Funshow', '2yr old mares 33 - 37', '2nd place  AMHA judge', 1296740469),
+(26, 1, 5, 2010, 'ICAMH', 'Spring Fling Funshow', 'Solid Color  ', '2nd place  AMHA Judge', 1296740469),
+(27, 15, 5, 2010, 'MHCE', 'Belgium International Open', 'Solid Color', '3rd place', 1296740469),
+(28, 15, 5, 2010, 'MHCE', 'Belgium International Open', 'Mares Oversized', '1st place', 1296740469),
+(29, 1, 5, 2010, 'ICAMH', 'Spring Fling Funshow', 'Solid Color', '1st place', 1296740469),
+(30, 16, 9, 2005, 'NAS', 'Merriekeuring', 'merrie veulens  luxe', '2e premie', 1296741800),
+(31, 6, 8, 2005, 'MHCE', 'Danish Open', 'Solid Color', '6th place', 1296741800),
+(32, 14, 6, 2005, 'NAS', 'Stamboek opname', 'Stamboek opname', '96cm at the withers', 1296742444),
+(33, 28, 2, 2004, 'NMPRS', 'Hengstenkeuring', 'kleine maat luxe', '2e premie', 1296743177),
+(34, 28, 2, 2004, 'NMPRS', 'Hengstenkeuring', 'Stamboek opname', '89cm', 1296743177),
+(35, 31, 3, 2007, 'NMPRS', 'Hengstenkeuring', 'kleine maat luxe', '1A  premie', 1296743177),
+(36, 11, 4, 2009, 'NMPRS', 'Hengstenkeuring', 'kleine maat luxe', '1A  premie', 1296743177),
+(37, 10, 4, 2010, 'NMPRS', 'Hengstenkeuring', 'kleine maat luxe', '1A  premie', 1296743177),
+(43, 28, 8, 2007, 'NMPRS', 'Merriekeuring', 'merrie veulens minimaat luxe', '2e premie', 1296734632),
+(44, 1, 5, 2010, 'ICAMH', 'Spring Fling Funshow', 'Senior Mares 32 - 38"', '1st place AMHA judge', 1296734632),
+(45, 1, 5, 2010, 'ICAMH', 'Spring Fling Funshow', 'Senior Mares 32 - 38"', '1st place NM{PRS judge', 1296734632),
+(46, 1, 5, 2010, 'ICAMH', 'Spring Fling Funshow', 'Solid Color', '1st place AMHA judge', 1296734632),
+(47, 1, 5, 2010, 'ICAMH', 'Spring Fling Funshow', 'Solid Color', '2nd place  NMPRS judge', 1296734632),
+(48, 1, 5, 2010, 'ICAMH', 'Spring Fling Funshow', 'Champion Classe', 'Grand Champion AMHA Judge', 1296734632),
+(49, 1, 5, 2010, 'ICAMH', 'Spring Fling Funshow', 'Champion Classe', 'Grand Champion NMPRS Judge', 1296734632),
+(50, 1, 5, 2010, 'ICAMH', 'Spring Fling Funshow', 'Champion Classe', 'Supreme Champion AMHA Judge', 1296734632),
+(51, 15, 5, 2010, 'MHCE', 'Belgium International Open', 'Solid Color', '2nd place', 1296734632),
+(52, 15, 5, 2010, 'MHCE', 'Belgium International Open', 'Senior Mares 32 - 34"', '2nd place', 1296734632),
+(53, 15, 5, 2010, 'MHCE', 'Belgium International Open', 'Senior Mares Non AMHA', '1st place', 1296734632),
+(54, 15, 5, 2010, 'MHCE', 'Belgium International Open', 'Champion Classe', 'Grand Champion Non AMHA', 1296734632),
+(60, 28, 8, 2010, 'NMPRS', 'Merriekeuring', 'veulens minimaat luxe', '2e premie', 1299430496),
+(72, 8, 5, 2011, 'ICAMH', 'Spring Fling Fun Show', 'Senior Mares 32\\" up to 34\\"', '3rd place AMHA Judge', 1296731806),
+(73, 8, 5, 2011, 'ICAMH', 'Spring Fling Fun Show', 'Senior Mares 32\\" up to 34\\"', '4th place NMPRS Judge', 1296731806),
+(77, 27, 8, 2011, 'NMPRS', 'Merriekeuring', 'Stamboek opname', '90cm at the withers', 1296731806),
+(78, 27, 8, 2011, 'NMPRS', 'Merriekeuring', 'Stamboek opname', '92cm at the withers', 1296740469),
+(79, 27, 8, 2011, 'NMPRS', 'Merriekeuring', 'Stamboek opname', '90cm at the withers', 1296741800);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `text`
+--
+
+CREATE TABLE IF NOT EXISTS `text` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) COLLATE utf8_bin NOT NULL,
+  `text` mediumtext COLLATE utf8_bin NOT NULL,
+  `stamp` varchar(12) COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=70 ;
+
+--
+-- Gegevens worden uitgevoerd voor tabel `text`
+--
+
+INSERT INTO `text` (`id`, `title`, `text`, `stamp`) VALUES
+(59, 'Lorem Ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non commodo diam. Sed pretium elit a nibh aliquam hendrerit. In sit amet nulla augue, non porta sapien. Nam diam velit, lacinia ac viverra et, mollis id arcu. Cras sed nulla erat. Nam viverra vestibulum felis eu luctus. Integer varius egestas mollis. Donec consectetur eros ut eros rhoncus eget convallis ipsum auctor. In feugiat felis eget felis facilisis quis varius diam mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin viverra lectus ac urna pharetra eleifend. Donec sagittis lobortis nulla. Aliquam erat volutpat. Fusce at quam venenatis orci luctus ultrices.\r\n\r\nSuspendisse augue nibh, interdum et varius eget, ullamcorper vitae magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus varius risus sagittis felis faucibus sollicitudin. Praesent consectetur quam at ante placerat malesuada. Sed dui erat, varius vel molestie eu, tristique id sapien. Etiam quis leo nunc, et euismod arcu. Nulla tincidunt semper nulla, ac fermentum diam sagittis eu. Phasellus dignissim risus et tortor accumsan ultrices. Quisque ut eros turpis. Sed eget tellus id nulla feugiat lobortis nec sit amet augue. Vivamus sed mi justo, at suscipit sem. Nullam tempor malesuada enim vitae varius. Curabitur vitae eros odio, eu euismod augue. Donec viverra volutpat posuere. Nullam vestibulum, arcu ac bibendum iaculis, elit justo malesuada ante, a lacinia dui elit ac mauris. Maecenas aliquam facilisis purus, a pellentesque tellus aliquam ut. Suspendisse tristique nulla cursus leo volutpat ac luctus dui gravida. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eget magna vel ligula placerat sagittis.\r\n\r\nMaecenas in pellentesque ligula. Nunc hendrerit fermentum massa vitae condimentum. Integer placerat posuere turpis vel porta. Aenean in metus odio, eget imperdiet augue. Nam viverra convallis lobortis. Nulla facilisi. Integer nec nunc sed leo commodo gravida in in urna. Aliquam erat enim, egestas quis varius at, aliquet ac massa. Aliquam euismod volutpat semper. Maecenas volutpat vestibulum magna sit amet aliquet. Vivamus sapien enim, ullamcorper vitae eleifend in, egestas in ligula. Integer posuere elit non sem hendrerit at mattis enim facilisis. Duis convallis luctus volutpat. Proin nulla mauris, pellentesque vel pulvinar ut, rutrum ut lacus. In a massa tortor. Curabitur eu lectus risus, id commodo nisi. ', '1287766418'),
+(60, 'html test', '<a href="http://localhost/testsite/index.php?lang=en">Website</a>', '1287786244'),
+(61, 'html test 2', 'http://localhost/testsite/index.php?lang=en', '1287786297'),
+(62, 'Try out', 'Eens een keer een andere titel.\r\n\r\n\r\nHahahahaha\r\n\r\n\r\nEens kijken wat er nu gebeurd.', '1287818223'),
+(63, 'En dan nog een keertje', 'Pffffffff die errors wegwerken is niet echt een leuk klusje.\r\n\r\nMaar alles gaat goed komen denk ik.', '1287818374'),
+(64, 'aint no time no reason', 'Let go let go happen.', '1287818539'),
+(65, 'Pffffffff tis wa', 'Tis wa mej die errors.', '1287818601'),
+(66, 'weer iets proberen', 'Eens kijken of dit de oplossing is.', '1287818984'),
+(67, 'Daar gaan we weer', 'Word een beetje gestoord hiervan.', '1287819161'),
+(68, 'We komen er wel', 'Althans dat hoop ik maar.', '1287819287'),
+(69, 'En dan nog een keertje', 'Hoeveel keer nu al??????????????', '1287819438');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

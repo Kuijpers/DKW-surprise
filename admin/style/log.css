@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+#logcontainer{
+	position		:	absolute;
+	top				:	50%;
+	left			:	50%;
+	height			:	200px;
+	width			:	300px;
+	margin			:	-100px 0 0 -150px;
+	border			:	1px solid #999999;
+	color			:	#000000;
+	background-image:	url(../images/logbg.png);
+	background-color:	#ffffff;
+}
+
+#logcontainer table{
+	margin-left		:	10px;
+	font-weight		:	bold;
+	
+}
+
+#logcontainer table.done{
+	margin-left		:	40px;
+	text-align		:	center;
+	font-weight		:	normal;
+}
+
+#logcontainer h3{
+	margin-left		:	25px;	
+	
+}
+
+#logcontainer h3.red{
+	color			:	red;
+	
+}
+
+#logcontainer input{
+	border			:	3px double #999999;	
+}
+
+#logcontainer h6{
+	color			:	#666666;
+	text-align		:	center;
+	
+}

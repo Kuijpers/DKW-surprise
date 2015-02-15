@@ -1,0 +1,50 @@
+<ul id="nav">
+	<li <?php if ($section_id == "Home"){echo 'class="top"';} else{echo 'class="top_empty"';} ?>     >
+		<a href="home.php" class="top_link">
+        	<span <?php if ($section_id == "Home"){echo 'class="normal"';} else{echo 'class="normal_empty"';} ?>     >
+            	<?php echo $ADMMENU['home']; ?>
+           		<span <?php if ($section_id == "Home"){echo 'class="down"';} else{echo 'class="down_empty"';} ?>     >
+                	&nbsp;
+               	</span>
+           	</span>
+       	</a>
+	</li>
+    
+    <li <?php if ($section_id == "Settings"){echo 'class="top"';} else{echo 'class="top_empty"';} ?>     >
+		<a href="settings.php" class="top_link">
+        	<span <?php if ($section_id == "Settings"){echo 'class="normal"';} else{echo 'class="normal_empty"';} ?>     >
+            	<?php echo $ADMMENU['settings']; ?>
+           		<span <?php if ($section_id == "Settings"){echo 'class="down"';} else{echo 'class="down_empty"';} ?>     >
+                	&nbsp;
+               	</span>
+           	</span>
+       	</a>
+	</li>
+    
+    <li <?php if ($section_id == "Customer Service"){echo 'class="top"';} else{echo 'class="top_empty"';} ?>     >
+		<a href="#" class="top_link">
+        	<span <?php if ($section_id == "Customer Service"){echo 'class="normal"';} else{echo 'class="normal_empty"';} ?>     >
+            	<?php echo $ADMMENU['cs']; ?>
+           		<span <?php if ($section_id == "Customer Service"){echo 'class="down"';} else{echo 'class="down_empty"';} ?>     >
+                	&nbsp;
+               	</span>
+           	</span>
+       	</a>
+	</li>
+    
+    <li <?php if ($section_id == "Help"){echo 'class="top"';} else{echo 'class="top_empty"';} ?>     >
+		<a href="#" class="top_link">
+        	<span <?php if ($section_id == "Help"){echo 'class="normal"';} else{echo 'class="normal_empty"';} ?>     >
+            	<?php echo $ADMMENU['help']; ?>
+           		<span <?php if ($section_id == "Help"){echo 'class="down"';} else{echo 'class="down_empty"';} ?>     >
+                	&nbsp;
+               	</span>
+           	</span>
+       	</a>
+	</li>
+    
+    
+    
+    
+    
+</ul>

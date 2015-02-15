@@ -1,0 +1,30 @@
+Version 1.2
+
+#	Several minor bug fixes
+
+#	Added to finalize process home_horses.php
+		* Add offspring jump
+		* Add current breeding jump
+		* Add result jump
+
+Version 1.1
+
+#	Bugfix admin/lang/foo/main.php
+		Added if function for variable $login line 39 - 46
+#	Bugfix admin/home_foo.php
+		Added if function for caseswitch action line 21 - 28
+#	Update lang/nl/main.php
+		Added date arry & horse array
+#	Update admin/home_horse.php
+		Added header redirect on line 5084
+		case delete
+#	Bugfix gallery.php
+		Changed variable $title to $image to avoid undefined variables on line 89
+
+Version 1.0
+
+#	Incomplete admin panel
+#	Missing admin/settings
+#	Missing admin/customer service
+#	Missing admin/General settings
+#	Missing admin/help section

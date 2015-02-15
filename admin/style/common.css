@@ -1,0 +1,335 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	text-align			:		center;
+	margin				:		0px auto;
+	padding				:		0px;
+	height				:		100%;
+	background-image	:		url(../images/body_bg.png);
+	background-repeat	:		repeat;
+	overflow			:		auto;
+}
+
+div.container{
+	width				:		1100px;
+	min-height			:		93%;
+	height				:		auto;
+	margin				:		0px auto;
+	margin-top			:		20px;
+	padding				:		0px;
+	position			:		relative;
+	background-image	:		url(../images/container_bg.png);
+	background-repeat	:		repeat;
+	border				:		1px solid #000000;
+	float				:		inherit;
+	overflow			:		auto;
+}
+
+
+div.time{
+	width				:		100%;
+	height				:		20px;
+	margin-top			:		5px;
+	background-color	:		#9999ff;
+	color				:		#ffffff;
+	
+}
+
+div.menu{
+	height				:		auto;
+	width				:		100%;
+	margin-top			:		10px;
+	float				:		left;
+	position			:		relative;
+	z-index				:		100; 
+	
+	
+}
+
+div.submenu{
+	width				:		1090px;
+	height				:		95px;
+	margin-top			:		25px;
+	margin-left			:		5px;
+	display				:		block;
+	position			:		relative;
+	background-image	:		url(../images/submenu_bg.png);
+	background-repeat	:		repeat-x;
+	z-index				:		50; 
+}
+span.submenu_left{
+	float				:		left;
+	width				:		12px;
+	height				:		95px;
+	margin-top			:		-5px;
+	display				:		block;
+	position			:		relative;
+	background-image	:		url(../images/submenu_left.png);
+	background-repeat	:		no-repeat;
+	
+}
+
+span.submenu_right{
+	float				:		right;
+	width				:		12px;
+	height				:		95px;
+	margin-top			:		-5px;
+	display				:		block;
+	position			:		relative;
+	background-image	:		url(../images/submenu_right.png);
+	background-repeat	:		no-repeat;
+	
+}
+
+div.subblocks{
+	width				:		60px;
+	height				:		80px;
+	float				:		left;
+	position			:		relative;
+	border				:		1px solid #cccccc;
+	margin				:		1px 3px 0 2px;
+	display				:		block;
+	cursor				:		pointer;
+}
+
+div.subtop{
+	width				:		100%;
+	height				:		65px;
+	float				:		left;
+	display				:		block;
+	position			:		relative;
+	
+	
+}
+
+div.subbottom{
+	width				:		100%;
+	height				:		15px;
+	float				:		left;
+	position			:		relative;
+	display				:		block;
+	background-color	:		#cccccc; 
+	color				:		#333399;
+	line-height			:		15px;
+}
+
+a.submenu{
+	text-decoration		:		none; 
+	color				:		#333399; 
+	font-size			:		12px; 
+	font-weight			:		bold;
+	display				:		block;	
+}
+
+img{
+	border-style		:		none;
+}
+
+#body div.body{
+	width				:		100%;
+	height				:		100%;
+	min-height			:		350px;
+	margin				:		0 0 0 0;
+	position			:		relative;
+	float				:		left;
+}
+
+#body div.admin_menu{
+	width				:		175px;
+	height				:		auto;
+	min-height			:		350px;
+	margin-top			:		5px;
+	margin-left			:		5px;
+	position			:		relative;
+	float				:		left;
+	border				:		1px solid #cccccc;
+	background-color	:		#f3f2f2;
+	text-align			:		left;
+}
+
+#body div.admin_body{
+	width				:		890px;
+	height				:		auto;
+	min-height			:		350px;
+	margin-top			:		5px;
+	margin-left			:		20px;
+	margin-bottom		:		50px;
+	position			:		relative;
+	float				:		left;
+	border				:		1px solid #f3f2f2;
+	background-color	:		#ffffff;
+	overflow			:		auto;
+	text-align			:		left;
+}
+
+#body div.body_field{
+	width				:		870px;
+	height				:		auto;
+	margin-left			:		10px;
+	margin-top			:		5px;
+	float				:		left;
+	position			:		relative;
+	
+}
+
+#body div.halve{
+	width				:		50%;
+	height				:		auto;
+	float				:		left;
+		
+	
+}
+
+#body div.full{
+	width				:		100%;
+	height				:		auto;
+	float				:		left;		
+	
+}
+
+
+#body div.small{
+	width				:		auto;
+	height				:		auto;
+	float				:		left;		
+	
+}
+
+#body div.image_scroll{
+	height				:		200px;
+	width				:		90%;
+	float				:		left;
+	margin-left			:		5%;
+	overflow			:		auto;
+}
+
+#body div.horseinfo{
+	height				:		200px;
+	width				:		90%;
+	float				:		left;
+	margin-left			:		5%;
+	overflow			:		auto;
+	border				:		1px solid #cccccc;
+	margin-top			:		15px;
+	margin-bottom		:		15px;
+	padding-left		:		5px;
+	
+}
+
+#body div.horseinfochange{
+	height				:		auto;
+	width				:		90%;
+	float				:		left;
+	margin-left			:		5%;
+	overflow			:		auto;
+	border				:		1px solid #cccccc;
+	margin-top			:		15px;
+	margin-bottom		:		15px;
+	padding-left		:		5px;
+	
+}
+
+#body div.horseimagechange{
+	width				:		90%;
+	height				:		auto;
+	float				:		left;
+	margin-left			:		5%;
+	
+}
+
+#body div.horseimage{
+	width				:		200px;
+	height				:		auto;
+	float				:		left;
+	margin-right		:		10px;
+	margin-bottom		:		10px;
+	
+	
+}
+
+#body div.section{
+	width				:		90%;
+	height				:		auto;
+	float				:		left;
+	margin-left			:		5%;
+	margin-bottom		:		10px;
+	border				:		1px solid #cccccc;
+	
+}
+
+#body fieldset{
+	width				:		90%;
+	height				:		auto;
+	margin-left			:		5%;
+	margin-top			:		15px;
+	border				:		1px solid #9999ff;
+	
+}
+
+#body table{
+	margin-left			:		5%;
+	margin-right		:		5%;
+	margin-top			:		15px;
+	margin-bottom		:		15px;
+	border				: 		none;
+	border-collapse		: 		collapse;
+}
+
+#body td.title{
+	width				:		600px;
+	border				: 		none;
+}
+#body td.picks{
+	width				:		35px;
+	border				: 		none;
+}
+
+#body tr.listing{
+	border				:		1px dotted #cccccc;
+		
+}
+
+#body th{
+	font-weight			:		normal;	
+}
+
+#body h3.red{
+	color			:	red;
+	
+}
+
+#picture div.imagebody{
+	width			:		96%;
+	margin-left		:		2%;
+	margin-top		:		15px;
+	height			:		auto;
+	float			:		left;
+	
+}
+
+#picture div.thumb{
+	width			:		auto;
+	height			:		auto;
+	margin-right	:		3px;
+	margin-bottom	:		3px;
+	float			:		left;
+	border			:		1px dotted #000000;
+	
+}
+
+img.thumb{
+	margin			:		5px;	
+}
+
+
+
+
+#footer div.footer{
+	width				:		998px;
+	height				:		40px;
+	bottom				:		0;
+	position			:		absolute;
+	line-height			:		40px;
+	float				:		inherit;	
+}
